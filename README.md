@@ -10,7 +10,7 @@
 ## Installation
 
 ```bash
-$ npm i --save ipfs-even-stream
+$ npm i --save ipfs-event-stream
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ const createEventStream = require('ipfs-event-stream')
 
 const api = getIPFSAPI()
 
-const event$ = createEventStream(api')
+const event$ = createEventStream(api)
 
 event$.subscribe(event => console.log(event))
 ```
