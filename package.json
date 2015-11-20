@@ -1,5 +1,5 @@
 {
-  "name": "js-ipfs-event-stream",
+  "name": "ipfs-event-stream",
   "version": "1.0.0-alpha.0",
   "description": "",
   "main": "src/index.js",
