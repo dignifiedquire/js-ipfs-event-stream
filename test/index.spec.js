@@ -20,10 +20,11 @@ describe('event$', () => {
     })
   })
 
-  it('emits event', done => {
-    event$.first().subscribe(obj => {
-      expect(obj).to.be.an.object
-      done()
+  it('emits an event', () => {
+    return event$.first().toPromise().then(event => {
+      expect(event).to.be.an('object')
+      expect(event.type).to.be.an.instanceof(Array)
+      expect(event.timestamp).to.be.an.instanceof(Date)
     })
   })
 })
