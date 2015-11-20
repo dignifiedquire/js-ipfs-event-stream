@@ -1,6 +1,6 @@
 {
   "name": "ipfs-event-stream",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "",
   "main": "src/index.js",
   "scripts": {
@@ -36,7 +36,14 @@
     "test"
   ],
   "bugs": {
-    "url": "https://github.com/dignifiedquire/js-ipfs-event-stream/issues"
+    "url": "https://github.com/Dignifiedquire/js-ipfs-event-stream/issues"
   },
-  "homepage": "https://github.com/ipfs/js-ipfs-event-stream"
+  "homepage": "https://github.com/Dignifiedquire/js-ipfs-event-stream",
+  "engines": {
+    "node": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dignifiedquire/js-ipfs-event-stream"
+  }
 }
