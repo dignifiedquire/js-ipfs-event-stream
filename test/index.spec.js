@@ -9,22 +9,46 @@ const apiAddrs = require('./tmp-disposable-nodes-addrs.json')
 describe('event$', () => {
   let event$
 
-  before(function (done) {
-    this.timeout(20000)
+  before(function () {
     const api = ipfsAPI(apiAddrs.a)
-    createEventStream(api, (err, event) => {
-      if (err) return done(err)
-
-      event$ = event
-      done()
-    })
+    event$ = createEventStream(api)
   })
 
-  it('emits an event', () => {
-    return event$.first().toPromise().then(event => {
+  it('emits log/tail events', function () {
+    this.timeout(20000)
+
+    return event$
+    .filter(event => event.source === 'log/tail')
+    .first()
+    .toPromise()
+    .then(event => {
       expect(event).to.be.an('object')
       expect(event.type).to.be.an.instanceof(Array)
       expect(event.timestamp).to.be.an.instanceof(Date)
+    })
+  })
+
+  it('emits diag/sys events', function () {
+    this.timeout(20000)
+
+    return event$
+    .filter(event => event.source === 'diag/sys')
+    .first()
+    .toPromise()
+    .then(event => {
+      expect(event).to.be.an('object')
+    })
+  })
+
+  it('emits diag/net events', function () {
+    this.timeout(20000)
+
+    return event$
+    .filter(event => event.source === 'diag/net')
+    .first()
+    .toPromise()
+    .then(event => {
+      expect(event).to.be.an('object')
     })
   })
 })
