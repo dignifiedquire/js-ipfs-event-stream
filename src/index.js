@@ -1,6 +1,6 @@
 'use strict'
 
-const Rx = require('rx')
+// const Rx = require('rx')
 const RxNode = require('rx-node')
 
 function createEventStream (api, done) {
@@ -11,6 +11,5 @@ function createEventStream (api, done) {
     done(null, events$)
   })
 }
-
 
 module.exports = createEventStream
