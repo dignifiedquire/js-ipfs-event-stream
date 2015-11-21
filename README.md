@@ -1,6 +1,6 @@
 # JS IPFS EventStream
 
-[![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/) [![](https://img.shields.io/badge/freejs-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
+[![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/) [![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
 [![Dependency Status](https://david-dm.org/Dignifiedquire/js-ipfs-event-stream.svg?style=flat-square)](https://david-dm.org/Dignifiedquire/js-ipfs-event-stream)
 [![Build Status](https://img.shields.io/travis/Dignifiedquire/js-ipfs-event-stream/master.svg?style=flat-square)](https://travis-ci.org/Dignifiedquire/js-ipfs-event-stream)
 
