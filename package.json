@@ -11,7 +11,7 @@
   "author": "Friedel Ziegelmayer <dignifiedquire@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "rx": "^4.0.7",
+    "rx": "^4.1.0",
     "rx-node": "^1.0.1"
   },
   "devDependencies": {
