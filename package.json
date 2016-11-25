@@ -24,7 +24,7 @@
     "gulp-mocha": "^2.1.3",
     "ipfs-api": "github:dignifiedquire/js-ipfs-api#log",
     "ipfsd-ctl": "^0.8.0",
-    "mocha": "^2.3.3",
+    "mocha": "^3.2.0",
     "pre-commit": "^1.1.2",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.4"
