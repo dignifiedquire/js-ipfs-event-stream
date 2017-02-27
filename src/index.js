@@ -38,7 +38,7 @@ function createLogStream (api) {
 function createEventStream (api) {
   return createLogStream(api)
   .merge(createDiagStream(api, 'net'))
-  .merge(createDiagStream(api, 'sys'))
+//  .merge(createDiagStream(api, 'sys'))
 }
 
 module.exports = createEventStream
